@@ -2,7 +2,7 @@
 
 require_once 'common.php';
 
-$sites = glob('/Users/steve/Sites/' . $arguments[0] . '*');
+$sites = glob($_SERVER['HOME'] . '/Sites/' . $arguments[0] . '*');
 $action = isset($arguments[1]) ? $arguments[1] : false;
 
 $w = new Workflows;
